@@ -18,7 +18,7 @@
                     Content="Открыть список"
                     Click="OpenListBtn_Click"/>
 
-            <!--Пробел между кнопками.-->
+           
             <Separator Width="20" Height="0"/>
 
             <Button Name="AddItemBtn"
@@ -26,7 +26,6 @@
                     Click="AddItemBtn_Click"/>
         </StackPanel>
 
-        <!--Создаем фрейм обяз-но, он для стр навиг-ции--!>
         <Frame Name="MainFrame" Grid.Row="2" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

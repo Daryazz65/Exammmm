@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Exammmm.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,29 @@ namespace Exammmm.Практика
         public _3_add_item()
         {
             InitializeComponent();
+        }
+
+        private void AddBtn_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Event newEvent = new Event()
+                {
+                    Name = NameTb.Text,
+                    Date = DateDp.SelectedDate.Value,
+                    Logo = Phototb.Text,
+                    DirectionId = Convert.ToInt32(DirectionTb.Text)
+                };
+
+                App.context.Event.Add(newEvent);
+                App.context.SaveChanges();
+
+                MessageBox.Show("Мероприятие успешно добавлено!");
+            }
+            catch
+            {
+
+            }
         }
     }
 }
