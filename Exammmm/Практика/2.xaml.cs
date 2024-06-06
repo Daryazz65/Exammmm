@@ -22,18 +22,32 @@ namespace Exammmm.Практика
         public _2()
         {
             InitializeComponent();
+            //Это для страничной навигации!!!
+            //MainFrame.Navigate(new _2_list());
 
-            MainFrame.Navigate(new _2_list());
+            //А это для оконной навигации.
+
         }
 
         private void OpenListBtn_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new _2_list());
+            //Это для страничной навигации!!!
+            //MainFrame.Navigate(new _2_list());
+
+            //А это для оконной навигации.
+            _33_list list = new _33_list();
+            list.Show();
         }
 
         private void AddItemBtn_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new _3_add_item());
+            //Это для страничной навигации!!!
+            //MainFrame.Navigate(new _3_add_item());
+
+            //А это для оконной навигации.
+            _33_add_item addItem = new _33_add_item();
+            addItem.Show();
+
         }
     }
 }

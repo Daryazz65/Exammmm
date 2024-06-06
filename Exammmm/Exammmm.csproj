@@ -100,6 +100,12 @@
     <Compile Include="Практика\2_list.xaml.cs">
       <DependentUpon>2_list.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Практика\33_add_item.xaml.cs">
+      <DependentUpon>33_add_item.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Практика\33_list.xaml.cs">
+      <DependentUpon>33_list.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Практика\3_add_item.xaml.cs">
       <DependentUpon>3_add_item.xaml</DependentUpon>
     </Compile>
@@ -120,6 +126,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Практика\2_list.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Практика\33_add_item.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Практика\33_list.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
