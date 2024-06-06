@@ -23,8 +23,10 @@ namespace Exammmm.Практика
         public _2_list()
         {
             InitializeComponent();
+            //это для страничной навигации.
 
-            EventsLv.ItemsSource = App.context.Event.ToList();
+
+            //EventsLv.ItemsSource = App.context.Event.ToList();
         }
     }
 }

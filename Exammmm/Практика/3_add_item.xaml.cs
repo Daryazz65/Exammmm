@@ -27,26 +27,26 @@ namespace Exammmm.Практика
         }
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                Event newEvent = new Event()
-                {
-                    Name = NameTb.Text,
-                    Date = DateDp.SelectedDate.Value,
-                    Logo = Phototb.Text,
-                    DirectionId = Convert.ToInt32(DirectionTb.Text)
-                };
+        {            //это для страничной навигации.
+            //try
+            //{
+            //    Event newEvent = new Event()
+            //    {
+            //        Name = NameTb.Text,
+            //        Date = DateDp.SelectedDate.Value,
+            //        Logo = Phototb.Text,
+            //        DirectionId = Convert.ToInt32(DirectionTb.Text)
+            //    };
 
-                App.context.Event.Add(newEvent);
-                App.context.SaveChanges();
+            //    App.context.Event.Add(newEvent);
+            //    App.context.SaveChanges();
 
-                MessageBox.Show("Мероприятие успешно добавлено!");
-            }
-            catch
-            {
+            //    MessageBox.Show("Мероприятие успешно добавлено!");
+            //}
+            //catch
+            //{
 
-            }
+            //}
         }
     }
 }
