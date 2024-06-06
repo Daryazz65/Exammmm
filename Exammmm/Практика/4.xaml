@@ -1,0 +1,34 @@
+﻿<Window x:Class="Exammmm.Практика._4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exammmm.Практика"
+        mc:Ignorable="d"
+        Title="_4" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <Button Name="EditItemBtn" HorizontalAlignment="Left"
+                Content="Редактировать элемент" Click="EditItemBtn_Click"/>
+
+        <ListView Name="EventsLv" Grid.Row="2">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Название"
+                                    DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Дата"
+                                    DisplayMemberBinding="{Binding Date}"/>
+                    <GridViewColumn Header="Лого"
+                                    DisplayMemberBinding="{Binding Logo}"/>
+                    <GridViewColumn Header="Направление"
+                                    DisplayMemberBinding="{Binding DirectionId}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

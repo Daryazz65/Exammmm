@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Exammmm.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,28 +11,26 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Exammmm.Практика
 {
     /// <summary>
-    /// Логика взаимодействия для _2_list.xaml
+    /// Логика взаимодействия для _4.xaml
     /// </summary>
-    public partial class _2_list : Page
+    public partial class _4 : Window
     {
-        public _2_list()
+        public _4()
         {
             InitializeComponent();
-            //это для страничной навигации.
-
-
-            //EventsLv.ItemsSource = App.context.Event.ToList();
         }
 
         private void EditItemBtn_Click(object sender, RoutedEventArgs e)
         {
+            _4_edit_item editWindow = new _4_edit_item
+                (EventsLv.SelectedItem as Event);
 
+            editWindow.Show();
         }
     }
 }

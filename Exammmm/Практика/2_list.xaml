@@ -9,6 +9,8 @@
       Title="_2_list">
 
     <Grid>
+        
+
         <ListView Name="EventsLv">
             <ListView.View>
                 <GridView>

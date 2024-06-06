@@ -10,28 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Exammmm.Практика
 {
     /// <summary>
-    /// Логика взаимодействия для _2_list.xaml
+    /// Логика взаимодействия для _4_edit_item.xaml
     /// </summary>
-    public partial class _2_list : Page
+    public partial class _4_edit_item : Window
     {
-        public _2_list()
+        public _4_edit_item(Models.Event ev)
         {
             InitializeComponent();
-            //это для страничной навигации.
-
-
-            //EventsLv.ItemsSource = App.context.Event.ToList();
+            DataContext = ev;
         }
 
-        private void EditItemBtn_Click(object sender, RoutedEventArgs e)
+        private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            App.context.SaveChanges();
+            DialogResult = true;
         }
     }
 }
